@@ -1,119 +1,38 @@
-:root {
-    --color-letters-header: #ffffff;
-    --color-letters-header-hover: #0bde5f;
-}
-
 body{
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    font-family: 'Courier New';
-    font-weight: bolder;
 }
 
-header {
-    position: fixed;
-    left: 0;
-    top: 0;
+.main-menu {
     width: 100%;
-    background-color: #33077e;
+    background-color: grey;
     height: 94px;
-    z-index: 99;
 }
 
-.logo{
+.logo {
+    width: 35%;
     float: left;
-    height: 70px;
-    width: 70px;
-    padding-top: 12px;
-    padding-left: 12px;
-}
-.logo img {
-    height: 100%;
-    width: 100%;
-}
-
-.options-menu {
-    margin-right: 50px;
-    line-height: 50px;
-    float:right;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
 }
 
 .options-menu ul li{
     display: inline-block;
+    margin-right: 5%;
+    margin-top: 2%;
+    color: black;
 }
 
-.options-menu a{
-    padding: 23px;
-    color: var(--color-letters-header);
+.options-menu ul li a{
+    color: black;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
-    font-weight: bolder;
-    cursor: pointer;
-    transition: color .3s;
-    text-align: center;
-
 }
 
-.options-menu a:hover{
-    color: var(--color-letters-header-hover);
+.options-menu {
+    width: 50%;
+    float: right;
 }
 
-.img-main {
-    width: 100%;
-    height: 560px;
-    margin: auto;
-    margin-top: 90px;
-    position: relative;
-}
-
-.img-main p{
-    position: absolute;
-    bottom: 30%;
-    left: 10%;
-    width: 250px;
-    height: 200px;
-    color: #d2e007;
-    text-align: justify;
-    background-color: transparent;
-    padding: 15px;
-}
-
-.btn-img {
-    position: absolute;
-    bottom: 15%;
-    left: 18%;
-    text-decoration: none;
-    background-color: #33077e;
-    padding: 10px 30px;
-    border: none;
-    cursor: pointer;
-    transition: background-color .3s;
-    border-radius: 20px;
-
-}
-
-.img-main button:hover {
-    background-color: #0bde5f;
-}
-
-.btn-img a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-family: 'Courier New';
-    font-weight: bolder;
-}
-
-.third-part {
-    height: 980px;
-    width: 100%;
-}
-
-.third-part img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 135px;
-}
