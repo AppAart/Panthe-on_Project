@@ -7,83 +7,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panthe-on</title>
+    <script type="text/javascript" src="./js/main.js"></script>
 </head>
 
 
 <!-- Navbar -->
-<div class="navbar">
-    <div class="flex">
-        <img src="./img/Logo-reference.png" alt="Logo_Panthe-on" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Time</a></li>
-                <li><a href="#">Clientes</a></li>
-                <li><a href="#">Contatos</a></li>
-            </ul>
-        </nav>
-    </div>
+<header class="navbar">
+    <img src="./img/Logo-reference.png" alt="Logo_Panthe-on" class="logo">
+    <ul>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Time</a></li>
+        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Contatos</a></li>
+    </ul>
+</header>
+
+<div class="bestWay">
+    <img src="./img/BestWay.png" alt="">
 </div>
-<div class="fake-navbar"></div>
-
-
-
-<!-- Video -->
-<section class="video">
-    <div class="container">
-        <div class="embed">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dSD9XHRxV3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-</section>
 
 
 
 <!-- About us -->
-<section class="about-us">
-    <div class="flex2">
-        <div class="au-img">
-            <img src="./img/Dev-Wallpaper.png">
+<section>
+    <div class="aboutUs">
+        <div class="aboutUs-img">
         </div>
-        <div class="au-division">
-            <div class="au-txt">
-                <p> A PANTHE-ON, é uma startup de alma carioca, preparada para o mundo. </p>
-                <p> Nossa equipe com anos de experiência nas mais diversas áreas de tecnologia, desenvolvemos soluções únicas para o mercado com foco na agenda ESG. </p>
-                <p> Sempre pensando além do básico e entregando o melhor para os nossos clientes. </p>
-                <p> Com sua formação iniciada no HackingRio de 2019, <br> o maior hackathon da América Latina, sendo vitoriosa em seu cluster <br> de Petróleo & Gás, deu-se início a jornada de seus fundadores. </p>
-                <p> Através de participações em ideations, programas de aceleração e editais, fomos adquirindo experiências e nos consolidando até nos tornamos a PANTHE-ON, empresa disposta a criar soluções através da tecnologia e consciência social.
-            </div>
-            <button class="btn"><a href="#">Saiba+</a></button>
+        <div class="aboutUs-txt">
+            <p> A PANTHE-ON, é uma startup de alma carioca, preparada para o mundo. <br> Nossa equipe com anos de experiência nas mais diversas áreas de tecnologia, desenvolvemos soluções únicas para o mercado com foco na agenda ESG. <br> Sempre pensando
+                além do básico e entregando o melhor para os nossos clientes. <br> Com sua formação iniciada no HackingRio de 2019, <br> o maior hackathon da América Latina, sendo vitoriosa em seu cluster <br> de Petróleo & Gás, deu-se início a jornada
+                de seus fundadores. <br> Através de participações em ideations, programas de aceleração e editais, fomos adquirindo experiências e nos consolidando até nos tornamos a PANTHE-ON, empresa disposta a criar soluções através da tecnologia e
+                consciência social.</p>
         </div>
     </div>
 </section>
 
 <!-- Projects -->
-<section class="projects">
-    <div class="flex3">
+<section class="gallery">
+    <div class="image-box">
+        <img src="./Img/ANG.PNG">
+    </div>
+    <div class="image-box">
+        <img src="./Img/Eduk-img.PNG">
+    </div>
+    <div class="image-box">
+        <img src="./Img/MPS-img.png">
+    </div>
+</section>
+<!-- Team -->
+<section class="ourTeam">
+    <h1>Time</h1>
+    <div class="team">
+        <div class="team-img">
+            <img src="./Img/Project.png">
+        </div>
+        <div class="team-img">
+            <img src="./Img/Project.png">
+        </div>
+        <div class="team-img">
+            <img src="./Img/Project.png">
+        </div>
+        <div class="team-img">
+            <img src="./Img/Project.png">
+        </div>
+        <div class="team-img">
+            <img src="./Img/Project.png">
+        </div>
+    </div>
+</section>
 
-        <a href="#" class="project-item">
-            <div class="pro-grid">
-                <img src="./img/Project 1.png">
-            </div>
-        </a>
-
-
-        <a href="#" class="project-item">
-            <div class="pro-grid2">
-                <img src="./img/Project 1.png">
-            </div>
-        </a>
-
-
-        <a href="#" class="project-item">
-            <div class="pro-grid">
-                <img src="./img/Project 1.png">
-            </div>
-        </a>
+<!-- Clients -->
+<section>
+    <div class="clients">
+        <h1 class="cl-txt">Clientes</h1>
+        <img src="/img/Gerdau-Logo.png" class="cl-img">
 
     </div>
 </section>
+
+<!-- Contact and Footer-->
+<div class="contact">
+    <h1>Contatos</h1>
+    <form action="/php/enviar.php" name="form_contato" method="post" id="flex-ct">
+        <div class="ctTxt">
+            <h3>Bem-vindo a Panthe-on</h3>
+            <p>Quer nos conhecer melhor,<br> nos envie uma mensagem <br> marcarmos um café<br> e conversar melhor.</p>
+        </div>
+        <input type="text" name="name" maxlength="40" placeholder="Nome:">
+        <input type="email" name="email" maxlength="30" placeholder="Email:">
+        <textarea name="message" cols="16" rows="5" placeholder="Deixe seu recado para a gente:"></textarea>
+        <input type="submit" class="submit" value="Enviar" id="Submit">
+    </form>
+    <footer>
+        <div class="redes-sociais">
+            <a href=""><img src="./img/Whatsapp-logo.png" alt=""></a>
+            <a href=""><img src="./img/Email-Logo.png" alt=""></a>
+            <a href=""><img src="./img/Linkedin-Logo.png" alt=""></a>
+        </div>
+        <div class="footer-logo">
+            <img src="/img/Logo-Minimal.png" alt="">
+        </div>
+        <div class="resev">
+            <p>Todos os direitos reservados | Brasil 2021</p>
+        </div>
+    </footer>
+</div>
 
 </html>
